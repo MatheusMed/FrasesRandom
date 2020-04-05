@@ -1,0 +1,10 @@
+#FRASES RANDOM
+          CRIADO EM REACT NATIVE
+
+
+    APP EM DESENVOLVIMENTO
+
+
+    BIBLIOTECAS USADAS:
+
+    styled-components
