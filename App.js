@@ -4,31 +4,47 @@ import styled from 'styled-components/native';
 
 const Pagina = styled.View`
 flex:1;
+background-color:#7C4DFF;
+`;
+const StatusBar = styled.StatusBar`
+
 `;
 
+const Title = styled.Text`
+  color:#212121;
+  font-size:40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top:40px;
+`;
 
 const AreaDeTexto = styled.View`
-  background-color:#ddd;
-  height: 500px;
+  background-color:#C5CAE9;
+  height: 50%;
   margin-bottom:30px;
+  border-radius: 10px;
 `;
 
 const MudarFraseBTN = styled.TouchableOpacity`
-  background-color:green;
+  background-color:#C5CAE9;
   height: 60px;
   border:0.5px solid #000
   align-items: center;
   justify-content:center;
   border-radius: 15px;
+  margin-bottom: 10px;
 `;
 const TextButton = styled.Text`
   font-size:20px;
 `;
 
 const Frase = styled.Text`
-  color:#000;
-  font-size:30px;
+  color:#212121;
+  font-size:35px;
   text-align:center;
+  padding:5px;
+  margin:5px;
 `;
 
 export default () => {
@@ -55,8 +71,9 @@ function mudar(){
 
 
 
-  return(
+  return( 
       <Pagina>
+        <Title>FRASES RANDOM</Title>
           <AreaDeTexto>
             <Frase>{frase}</Frase>
           </AreaDeTexto>
