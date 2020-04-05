@@ -27,14 +27,29 @@ const TextButton = styled.Text`
 
 const Frase = styled.Text`
   color:#000;
-  font-size:20px;
+  font-size:30px;
+  text-align:center;
 `;
 
 export default () => {
 const [frase,setFrase] = useState('')
 
-
 function mudar(){
+  let numRandm = Math.random();
+  numRandm = Math.floor(numRandm*5);
+
+  let frases = [];
+  frases[0] = 'A felicida so e real quando compartilhada';
+  frases[1] = 'O senhor é meu pastor e nada faltara';
+  frases[2] = 'Amigo de todos, Amigo de ninguem';
+  frases[3] ='A verdadeira alegria não é aquela que seu rosto mostra, mas sim a que vive no seu coração e faz você contagiar todo mundo à sua volta.'
+  frases[4] = 'Apaga com um sorriso toda a tristeza que te invade a alma. Assim não darás aos que te odeiam a alegria de te verem chorando, mas darás aos que te amam a alegria de te verem sorrindo.'
+
+
+
+  let fraseEscolhida = frases[numRandm];
+
+    setFrase(fraseEscolhida);
 
   }
 
