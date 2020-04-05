@@ -31,11 +31,18 @@ const Frase = styled.Text`
 `;
 
 export default () => {
-  const [frase, setFrase]= useState('Ela é como um livro misterioso que muitos leem mas poucos conseguem entender o seu sentido.')
+const [a]= useState('Ela é como um livro misterioso que muitos leem mas poucos conseguem entender o seu sentido.')
+const [b]= useState('A verdadeira alegria não é aquela que seu rosto mostra, mas sim a que vive no seu coração e faz você contagiar todo mundo à sua volta.')
+const [c]= useState('Apaga com um sorriso toda a tristeza que te invade a alma. Assim não darás aos que te odeiam a alegria de te verem chorando, mas darás aos que te amam a alegria de te verem sorrindo.')
+const [d]= useState('Beleza sem conteúdo é como uma caixa de joias vazia, entusiasma para logo depois desanimar profundamente.')
+
+
+
+
   return(
       <Pagina>
           <AreaDeTexto>
-            <Frase>{frase}</Frase>
+            <Frase>{a}</Frase>
           </AreaDeTexto>
 
             <MudarFraseBTN>
