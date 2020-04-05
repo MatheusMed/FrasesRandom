@@ -3,16 +3,14 @@ import styled from 'styled-components/native';
 
 
 const Pagina = styled.View`
+flex:1;
 `;
-const AreaDeTexto = styled.View`
 
+
+const AreaDeTexto = styled.View`
   background-color:#ddd;
   height: 500px;
-`;
-const AreaDoBotao = styled.View`
-
-  background-color:#eee;
-  height: 500px;
+  margin-bottom:30px;
 `;
 
 const MudarFraseBTN = styled.TouchableOpacity`
@@ -33,23 +31,21 @@ const Frase = styled.Text`
 `;
 
 export default () => {
+  const [frase, setFrase]= useState('Ela é como um livro misterioso que muitos leem mas poucos conseguem entender o seu sentido.')
   return(
       <Pagina>
           <AreaDeTexto>
-            <Frase>...</Frase>
+            <Frase>{frase}</Frase>
           </AreaDeTexto>
-
-          <AreaDoBotao>
 
             <MudarFraseBTN>
 
               <TextButton>
-                Clique Aqui
+                Mudar Frase
               </TextButton>
 
             </MudarFraseBTN>
 
-          </AreaDoBotao>
 
       </Pagina>
     );
